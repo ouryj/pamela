@@ -1,0 +1,13 @@
+<h1>My Pamela Project</h1>
+
+<nav class="navbar is-primary">
+ <%= link_to 'New student', new_student_path %>
+</nav>
+
+
+<% @students.each do |s| %>
+<%= s.firstname %>
+<%= s.lastname %>
+<%= s.age %>
+<%= s.educationPeak %>
+<% end %>
