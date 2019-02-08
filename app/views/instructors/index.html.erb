@@ -1,2 +1,18 @@
-<h1>Instructors#index</h1>
-<p>Find me in app/views/instructors/index.html.erb</p>
+<div class='instructorheader'>
+<%= link_to 'Create Instructor', new_instructor_path, class:'link' %>
+</div>
+<h1 class='h1'> <strong>List Of Instructors</strong></h1>
+<div class='div'>
+  <% @instructors.each do |instructor| %>
+  <p><strong>Name: </strong>
+  <%= instructor.firstname%> <%=instructor.lastname %> <br>
+  <strong>Age: </strong>
+  <%= instructor.age %> <br>
+  <strong>Salary: $</strong> <%= instructor.salary %> <br>
+  <strong>Education:</strong> <%= instructor.educationPeak %>
+  </p>
+  <%=   link_to 'Show Info', instructor_path(instructor),               class:'links'  %>
+  <%=   link_to 'Edit Info', edit_instructor_path(instructor),          class:'links'  %>
+  <%=   link_to 'Delete', instructor_path(instructor), method: :delete, class:'links'     %>
+  <% end %>
+</div>

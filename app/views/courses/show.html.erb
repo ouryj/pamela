@@ -1,2 +1,7 @@
-<h1>Courses#show</h1>
-<p>Find me in app/views/courses/show.html.erb</p>
+<h1><strong>Course Info</strong></h1>
+<div>
+<p>Course Name <%=@course.name %> <br>
+<strong>Course Hours:</strong><%= @course.totalInClassHours %>
+</p>
+</div>
+<%= link_to "Home", courses_path %>

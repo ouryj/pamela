@@ -1,2 +1,11 @@
-<h1>Students#show</h1>
-<p>Find me in app/views/students/show.html.erb</p>
+<div class='showcontainer'>
+<h1 style="font-size:20px"> <strong> Full Student Info</h1></strong>
+<div class='show'>
+<p><strong>Name:</strong> <%= @student.firstname %> <%=@student.lastname %><br>
+<strong>Age: </strong><%@student.age %> <br>
+<strong>Education:</strong> <%= @student.educationPeak %>
+</p>
+
+<%= link_to 'Back', students_path %>
+</div>
+</div>

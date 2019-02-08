@@ -1,2 +1,12 @@
-<h1>Instructors#show</h1>
-<p>Find me in app/views/instructors/show.html.erb</p>
+<div class='showcontainer'>
+<h1 style="font-size:20px"> <strong> Full Instructor Info</h1></strong>
+<div class='show'>
+<p><strong>Name:</strong> <%= @instructor.firstname %> <%=@instructor.lastname %><br>
+<strong>Age: </strong><%@instructor.age %> <br>
+<strong>Salary:</strong>$<%= @instructor.salary %> <br>
+<strong>Education:</strong> <%= @instructor.educationPeak %>
+</p>
+
+<%= link_to 'Back', instructors_path %>
+</div>
+</div>

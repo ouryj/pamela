@@ -1,13 +1,30 @@
 <h1>My Pamela Project</h1>
 
-<nav class="navbar is-primary">
- <%= link_to 'New student', new_student_path %>
-</nav>
-
-
+<section class="hero is-success">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+       
+<%= link_to 'New student', new_student_path %>
+      </h1>
+      <h2 class="subtitle">
+        
+      </h2>
+    </div>
+  </div>
+</section>
+<div class="div">
+<ul>
 <% @students.each do |s| %>
-<%= s.firstname %>
-<%= s.lastname %>
-<%= s.age %>
-<%= s.educationPeak %>
+<div class="inner">
+<p><strong>Name:</strong>  <%= s.firstname %> <%= s.lastname %></p> <br>
+<p><strong>Age:</strong> <%= s.age %> </p><br>
+
+<p><strong>Education:</strong> <%= s.educationPeak %> </p>
+<%= link_to 'Edit Info', edit_student_path(s) %> <%= link_to 'Delete', student_path(s) , method: :delete%>
+<%= link_to 'Show Info', student_path(s) %>
+
+</div>
 <% end %>
+</ul>
+</div>

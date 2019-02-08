@@ -1,0 +1,16 @@
+<div class= "instructor">
+<%= form_with(model: @instructor) do |f| %>
+<p><strong>First Name:</strong>
+<%= f.text_field :firstname, class: 'input' %> <br>
+<strong>Last Name:</strong>
+<%= f.text_field :lastname, class: 'input' %> <br>
+<strong>Age:</strong>
+<%= f.number_field :age, class: 'input'%> <br>
+<strong>Salary: </strong>
+<%= f.number_field :salary, class: 'input' %> <br>
+<strong>Education</strong>
+<%= f.text_field :educationPeak, class: 'input' %>
+<%= f.submit  %>
+<%end%>
+</p>
+</div>

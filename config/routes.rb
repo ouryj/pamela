@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  resources :students
+  
   resources :courses
-  resources :cohorts
+  resources :cohorts 
+  resources :students
   resources :instructors
+  
   # get 'cohorts/index'
   # get 'cohorts/new'
   # get 'cohorts/show'
