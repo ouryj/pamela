@@ -1,38 +1,25 @@
+<div class="container">
 <%= form_with(model: @student) do |f| %>
 
+    <p><strong>First Name: </strong>
+    <%= f.text_field :firstname, class:'input' %></p>
 
 
-
-
-
-<div class="field">
-  <label class="label">First Name</label>
-  <div class="control">
-    <%= f.text_field :firstname, class:'input' %>
-  </div>
-</div>
-
-<div class="field">
-  <label class="label">Last Name</label>
-  <div class="control">
+<p> <strong>Last Name:</strong>
      <%= f.text_field :lastname, class:'input' %>
-  </div>
-</div>
+</p>
 
-<div class="field">
-  <label class="label">Age</label>
-  <div class="control">
+<p> <strong>Age:</strong>
   <%= f.number_field :age, class:'input' %>
-  </div>
-</div>
+</p>
 
-<div class="field">
-  <label class="label">Highest Eduction</label>
-  <div class="control">
+
+
+<p> <strong>Education:</strong>
     <%= f.text_field :educationPeak, class:'input' %>
-  </div>
-</div>
+</p> 
 
 <%= f.submit %>
 
 <%end%>
+</div>

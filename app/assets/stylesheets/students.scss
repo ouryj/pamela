@@ -1,8 +1,67 @@
 // Place all the styles related to the students controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#navhouse {
+    background-color:#2D2987;
+    color: #000; 
+    float: left;
+    width: 100%;
+}
+.navhome {
+    float: left; 
+    width: 70%;
+    margin: 20px 0 0 20px;
+}
+a {
+    color: white; 
+    padding: 20px 10px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+input#search{
+    float: left; width: 100px;
+    margin: 20px 0;
+}
+.btn {
+    margin: 20px 0 0 0;
+}
+.divhome {
+    clear: left;
+    display: block;
+    height: 300px;
+    margin: 0 0 20px 0;
+}
+#landing {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2D2987;
+    font-size: 2em;
+    margin: 0;
+    padding: 20px 0 10px 30px;
+}
+.lquote,h1 {
+    display: inline-block;
+    color: #2D2987;
+    font-size: 2em;
+    width: 600px;
+    margin: 0 0 0 20px;
+}
+.limgs {
+    float: left;
+    margin: 0 30 0px ;
+}
+.lname {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    display: block;
+    margin:20px;
+}
 .inner,.div{
-    padding: 10px; margin: 10px; background-color:yellow;
+    padding: 10px; margin: 10px; background-color:yellow; 
 }
 .showcontainer {
     padding: 10px; margin: 10px; background-color: chartreuse;
@@ -15,13 +74,35 @@
     color: blue; padding: 20px; margin-top: 150px; font-size: 20px;
 }
 
-.h1 
-{
-    padding: 20px; font-size: 20px;
+.head{ color:#2D2987; font-size: 20px}
+.divhead{
+    padding: 20px; font-size: 20px; color: red($color: #000000)
 }
-a {
-    color: blue;
+
+img {
+    height: 300px; width: 350px;
 }
-.links {
-    color: red; padding: 20px; margin: 20px; 
+#nelson, #malcom, #mlk,#koffi,#nap {
+     float: right;  margin-top: 50px; margin-right: 50px;
 }
+.divhome {
+    border:1px solid;
+}
+.search {
+    float: right;
+}
+#imgbook {
+    height: 200px; width: 150px;
+}
+.container {
+    text-align: center; border: 1px solid black; width: 650px;
+}
+.container p {
+    border-radius:1px; height: 50px; background-color: yellowgreen;
+    color: #2D2987; font-family: Verdana, Geneva, Tahoma, sans-serif;
+     border-radius: 5px; text-emphasis: 1px bold; padding: 10px; margin: 5px; font-size: 20px;
+}
+
+// .books {
+//     display: none
+// }

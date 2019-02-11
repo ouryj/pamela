@@ -1,7 +1,8 @@
 <h1><strong>Course Info</strong></h1>
-<div>
-<p>Course Name <%=@course.name %> <br>
-<strong>Course Hours:</strong><%= @course.totalInClassHours %>
+<hr>
+<div class="container">
+<p>Course Name <%=@course.name %> </p>
+<p><strong>Course Hours:</strong><%= @course.totalInClassHours %>
 </p>
 </div>
-<%= link_to "Home", courses_path %>
+

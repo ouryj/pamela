@@ -1,11 +1,11 @@
-<div class='showcontainer'>
-<h1 style="font-size:20px"> <strong> Full Student Info</h1></strong>
-<div class='show'>
-<p><strong>Name:</strong> <%= @student.firstname %> <%=@student.lastname %><br>
-<strong>Age: </strong><%@student.age %> <br>
-<strong>Education:</strong> <%= @student.educationPeak %>
+<div class='container'>
+<h1> <strong> Full Student Info</h1></strong>
+<hr>
+
+<p><strong>Name:</strong> <%= @student.firstname %> <%=@student.lastname %></p>
+<p><strong>Age: </strong><%@student.age %></p>
+<p><strong>Education:</strong> <%= @student.educationPeak %>
 </p>
 
 <%= link_to 'Back', students_path %>
-</div>
 </div>

@@ -1,9 +1,10 @@
-<div>
+<div class="container">
 <%= form_with(model: @course) do |c| %>
 <p> <strong>Name of Course:</strong>
 <%= c.text_field :name, class:'input' %> <br>
+<p>
 <strong>Total Hours in Class:</strong>
-<%= c.number_field :totalInClassHours, class: 'input' %> <br>
-<%= c.submit %> </p>
+<%= c.number_field :totalInClassHours, class: 'input' %> </p>
+<%= c.submit %> 
 <%end %> 
 </div>

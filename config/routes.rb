@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   
+  get 'homes/index'
+  get 'homes/new'
+  get 'studentcohorts/index'
+  get 'studentcohorts/new'
+  get 'studentcohorts/show'
+  get 'studentcohorts/edit'
   resources :courses
   resources :cohorts 
   resources :students
@@ -25,5 +31,5 @@ Rails.application.routes.draw do
   # get 'stuednts/new'
   # get 'stuednts/show'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'students#index'
+  root 'homes#index'
 end

@@ -1,0 +1,26 @@
+<div class="container">
+<%= form_with(model: @cohort) do |f| %>
+<p><%= f.label :name%>
+<%= f.text_field :name %></P>
+<p><%= f.label :StartDate %>
+<%= f.date_field :startDate %></p>
+<p><%= f.label :EndDate %>
+<%= f.date_field :endDate %></p>
+<p>
+<%= f.label :instructor%>
+<%=f.hidden_field :teacher_id, value: @teacher_id%>
+<%=f.select :teacher_id, @teachers.map{|teacher| [teacher.firstname,teacher.id]}%> </p>
+
+<p><%= f.label :Students%> <br>
+<%= f.hidden_field :student_id, value: @student_id %>
+<%= f.select :student_id, @students.map{|student|[student.firstname,student.lastname,student.id]} %> 
+</p>
+
+<p><%= f.label :Course %> 
+<%= f.hidden_field :course_id, value: @course_id %></p>
+<p><%= f.select :course_id, @courses.map{|course|[course.name,course.id]} %> </p>
+<%= f.submit %>
+</p>
+
+<% end %>
+</div>

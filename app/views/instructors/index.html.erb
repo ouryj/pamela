@@ -1,14 +1,17 @@
-<div class='instructorheader'>
+<div class='container'>
 <%= link_to 'Create Instructor', new_instructor_path, class:'link' %>
-</div>
+
 <h1 class='h1'> <strong>List Of Instructors</strong></h1>
-<div class='div'>
+<hr>
+
   <% @instructors.each do |instructor| %>
   <p><strong>Name: </strong>
-  <%= instructor.firstname%> <%=instructor.lastname %> <br>
-  <strong>Age: </strong>
-  <%= instructor.age %> <br>
-  <strong>Salary: $</strong> <%= instructor.salary %> <br>
+  <%= instructor.firstname%> <%=instructor.lastname %> </p>
+  <p><strong>Age: </strong>
+  <%= instructor.age %> </p>
+  <p>
+  <strong>Salary: $</strong> <%= instructor.salary %> </p>
+  <p>
   <strong>Education:</strong> <%= instructor.educationPeak %>
   </p>
   <%=   link_to 'Show Info', instructor_path(instructor),               class:'links'  %>

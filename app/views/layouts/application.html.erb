@@ -11,6 +11,22 @@
   </head>
 
   <body>
+  <div>
+  <h1 id="landing">Universal Learning Center</h1>
+  </div>
+  <div id="navhouse">
+    <nav class="navhome">
+    <%= link_to "Students", students_path, class:'nav' %>
+    <%= link_to 'Cohorts', cohorts_path, class:'nav' %>
+    <%= link_to 'Instructor', instructors_path, class:'nav' %>
+    <%= link_to 'Courses', courses_path, class:'nav' %>
+    <%= link_to 'Home', homes_index_path, class:'nav' %>
+    </nav>
+    <div id="search">
+    <%= render '/homes/home' %>
+    </div>
+  </div>
     <%= yield %>
+   
   </body>
 </html>

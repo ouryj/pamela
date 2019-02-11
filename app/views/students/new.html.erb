@@ -1,4 +1,6 @@
+<div class="container">
 <h2>sign up a student</h2>
+<hr>
 <%= form_with(model: @student) do |f| %>
 
 
@@ -6,34 +8,25 @@
 
 
 
-<div class="field">
-  <label class="label">First Name</label>
-  <div class="control">
-    <%= f.text_field :firstname, class:'input' %>
-  </div>
-</div>
+  <p> <strong>First Name:</strong>
+    <%= f.text_field :firstname, class:'input' %></p>
 
-<div class="field">
-  <label class="label">Last Name</label>
-  <div class="control">
-     <%= f.text_field :lastname, class:'input' %>
-  </div>
-</div>
 
-<div class="field">
-  <label class="label">Age</label>
-  <div class="control">
-  <%= f.number_field :age, class:'input' %>
-  </div>
-</div>
+<p><strong>Last Name:</strong>
+     <%= f.text_field :lastname, class:'input' %> </p>
+ 
 
-<div class="field">
-  <label class="label">Highest Eduction</label>
-  <div class="control">
-    <%= f.text_field :educationPeak, class:'input' %>
-  </div>
-</div>
 
-<%= f.submit %>
+ <p><strong>Age:</strong>
+  <%= f.number_field :age, class:'input' %></p>
+ 
+
+
+  <p> <strong>Education: </strong>
+    <%= f.text_field :educationPeak, class:'input' %></p>
+ 
+<button>
+<%= f.submit %></button>
 
 <%end%>
+</div>

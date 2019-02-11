@@ -1,2 +1,18 @@
-<h1>Cohorts#index</h1>
-<p>Find me in app/views/cohorts/index.html.erb</p>
+<div class="container">
+<h1>List of Cohorts</h1>
+<hr>
+
+<%= link_to 'Create a Cohort', new_cohort_path %>
+<% @cohorts.each do |cohort| %>
+<p>
+ <strong>Name:</strong> <%= cohort.name %> </p>
+ <p> <strong>Begin</strong><%= cohort.startDate %> </p>
+
+ <p><strong>End: </strong> <%= cohort.endDate %> </p>
+<p>
+ <strong>Course: </strong> <%= cohort.course.name %>
+ </p>
+ <%= link_to 'Edit Cohort', edit_cohort_path(cohort) %>
+ <% end %>
+ </div>
+ 
